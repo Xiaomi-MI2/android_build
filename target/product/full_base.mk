@@ -20,7 +20,8 @@
 # in inherited configurations.
 
 PRODUCT_PACKAGES := \
-    libfwdlockengine
+    libfwdlockengine \
+    WAPPushManager
 
 # Additional settings used in all AOSP builds
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -36,7 +37,7 @@ PRODUCT_AAPT_CONFIG := normal
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AllAudio.mk)
 
 # Get the TTS language packs
-#$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
+$(call inherit-product-if-exists, external/svox/pico/lang/all_pico_languages.mk)
 
 ifeq ($(TARGET_LOCALES),)
 # Get a list of languages.
