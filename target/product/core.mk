@@ -31,8 +31,6 @@ PRODUCT_PACKAGES += \
     DeskClock \
     DocumentsUI \
     DownloadProviderUi \
-    Email \
-    Exchange2 \
     FusedLocation \
     KeyChain \
     Keyguard \
